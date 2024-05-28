@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Faça seu orçamento </title>
+</head>
+<body>
+  
+<!--Header -->
+<div class="navbar">
+  <!--Logomarca-->
+    <div class="logoheader">
+      <img src="" alt="Logomarca empresa">
+
+    </div>
+    <div class="buttons">
+  <!--Botões-->
+    <!--Institucional-->
+      <div class="buttonNav">
+        <a href="index.html">Institucional</a>
+      </div>
+    <!--Serviços-->
+    <div class="buttonNav">
+      <a href="servicos.html">Serviços</a>
+    </div>
+    <!--Solicitar proposta-->
+    <div class="buttonOrcamento">
+      <a href="contato.html">Solicite um orçamento</a>
+
+    </div>
+  </div>
+</div>
+
+  <!--Formulario de dados-->
+    <div id="forms">
+      <form id="dadosUser" action="https://api.sheetmonkey.io/form/p9M5oeRd1wJxxkjeigfeNb" method="post">
+        <h1>Orçamentos</h1>
+        <h2>Será um prazer atendê-lo</h2>
+        <input name="NOME" type="text" placeholder="Nome"> 
+        <input name="Email" type="email" placeholder="Email">
+        <input name="Telefone" type="tel" placeholder="Telefone">
+        <div style="display: flex; flex-direction: row; gap: 0.5rem;">
+          <input style="width: 28rem;" type="text" name="Rua" placeholder="End. rua, avenida..." >
+          <input  style="width: 5rem;" type="number" name="Número" id="" placeholder="Número">
+        </div>
+        <div style="display: flex; flex-direction: row; gap: 0.5rem; ">
+          <select class="selects" style="width: 10rem; border: 0.5rem black; "name="UF" placeholder="UF" id="uf" >
+          <input  style="width: 14rem;" type="text" name="CIDADE" id="" placeholder="CIDADE">
+          <input style="width: 8.4rem;" type="text" name="CEP" placeholder="CEP">
+        
+        </div>
+
+        <select class="selects" name="Servico" style="height: 2.5rem;" >
+          <option value="default">Selecione o serviço</option>
+          <option value="Residencia">Segurança Residencial</option>
+        </select>
+
+        <input style="width: 34.5rem; height: 4rem;" type="text" name="Desc" placeholder="Como Podemos Ajudar?" >
+
+        <button id="enviar" type="submit" value="Enviar"  >Enviar
+      </form>
+
+      
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

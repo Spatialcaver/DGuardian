@@ -1,0 +1,98 @@
+body{
+margin: 0; 
+a{
+  text-decoration: none;
+}
+}
+.navbar{
+  width: 100% !important;
+  background-color: aquamarine;
+  display: flex;
+  gap: 20rem;
+  margin:0 !important;
+  height: 5rem;
+  color: black;  
+  z-index: 100;
+}
+
+.navbar .logoheader{
+position: fixed;
+margin-left: 0.8rem;
+margin-top: 1rem;
+width: 80rem;
+
+}
+
+.navbar .buttonNav{
+  width: 7rem;
+  gap: 1; 
+  height: 1.5rem;
+  background-color: rgb(136, 136, 161);
+  color: aliceblue;
+  text-align: center;
+  align-content: center;
+  margin-top: 0.5rem;
+  
+  
+}
+
+
+.buttons{
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: row;
+  gap: 5rem;
+  margin-left:10rem ;
+  text-align: center;
+  align-content: center;
+  margin-left: 40rem;
+}
+
+.navbar .buttonOrcamento{
+  max-height: 3rem;
+  width: 15rem;
+  background-color: azure;
+  text-align: center;
+  align-content: center;
+  
+  
+}
+
+#dadosUser{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+
+
+#dadosUser #enviar{
+  width: 10rem;
+  height: 2rem;
+  background-color: aqua;
+  margin-left: 13rem; 
+  text-align: center;
+  align-content: center;
+  
+}
+
+#dadosUser input{
+
+  padding: 0.5rem;
+  width: 35rem;
+}
+
+#forms{
+  display: flex;
+
+}
+
+
+select, input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: black !important;
+  border-radius: 20px !important;
+  
+}
