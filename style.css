@@ -1,18 +1,41 @@
+
+
+:root {
+  --preto: #1A1613;
+  --branco: #E6DAB2;
+  --amarelo: #faaf18e9; 
+  --ad:#1C1C1C; 
+}
 body{
 margin: 0; 
-a{
-  text-decoration: none;
+background-color: var(--branco) ;
+
 }
+
+.logoheader{
+  margin: 0 !important;
+  width: 150px !important;
+  height: 5rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  
+
 }
+
 .navbar{
   width: 100% !important;
-  background-color: aquamarine;
+  background-color: var(--preto);
   display: flex;
   gap: 20rem;
   margin:0 !important;
   height: 5rem;
   color: black;  
   z-index: 100;
+  position: fixed;
+  top: 0;
+
+
 }
 
 .navbar .logoheader{
@@ -27,11 +50,12 @@ width: 80rem;
   width: 7rem;
   gap: 1; 
   height: 1.5rem;
-  background-color: rgb(136, 136, 161);
-  color: aliceblue;
+  background-color: var(--branco);
+  color:var(--preto);
   text-align: center;
   align-content: center;
   margin-top: 0.5rem;
+  border-radius: 10px;
   
   
 }
@@ -39,7 +63,7 @@ width: 80rem;
 
 .buttons{
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   flex-direction: row;
   gap: 5rem;
   margin-left:10rem ;
@@ -51,12 +75,206 @@ width: 80rem;
 .navbar .buttonOrcamento{
   max-height: 3rem;
   width: 15rem;
-  background-color: azure;
+  background-color: var(--amarelo);
   text-align: center;
   align-content: center;
+  border-radius: 10px;
+  
   
   
 }
+
+.container{
+display: flex;
+background-color: var(--branco);
+color: var(--preto);
+margin: 5rem 0.5rem;
+width: 98%;
+padding: 0.3rem;
+
+
+}
+
+.ad{
+  display: flex;
+  background-color: var(--amarelo);
+  width: 100%;
+  padding: 2rem;
+  align-items: center;
+  flex-direction: row;
+
+  
+
+}
+
+
+.ad .textAd{
+  width: 45rem;
+  margin-left: 5rem;
+}
+.ad .btnAD{
+  background-color: var(--branco)!important;
+  width:15rem ;
+  height: 3rem;
+  margin-left: 8rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top:1.5rem ;
+  border-radius: 10px;
+
+}
+
+.ad .btnAD .a{
+  margin-top: 5rem;
+}
+
+
+.servico{
+  
+  background-color: var(--branco);
+  color: var(--preto);
+  margin: 5rem 0.5rem;
+  width: 98%;
+  padding: 0.3rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.servico .grid{
+  margin: 1rem 2REM;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.servico .grid .item {
+  background-color: var(--amarelo);
+  opacity: 0.8;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start content at the top */
+  padding: 1rem;
+}
+
+.servico .grid .item .imgservico {
+  width: 350px;
+  height: 15rem;
+  margin: 0 auto;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.servico .grid .item .tituloServico {
+  margin-top: -3.5rem;
+  flex-grow: 3; /* Allow text to grow and push image down */
+  background-color:rgba(0, 0, 0, 0.37);
+  height: 3rem;
+  color: var(--branco);
+  width: 10rem;
+}
+
+.footer{
+background-color: var(--preto);
+bottom: 0;
+width: 100%;
+height: 22rem;
+margin-top: 5rem;
+
+
+
+}
+
+
+
+.footer .infos{
+  gap: 2rem;
+  margin-left: 7rem;
+  display: grid;
+  grid-template-columns: 600px 600px;
+
+}
+
+.footer .contatos {
+  color: var(--branco);
+  margin-top: 4.2rem;
+  width: 100% !important;
+  display: flex;
+}
+
+.footer .contatos .contact {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  text-align: left;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+
+}
+
+.footer .contatos .infoSociais  a{
+  text-decoration: none;
+  color: inherit;
+ 
+
+}
+
+.footer .contatos .contact .infoSociais i{
+  display: flex;
+  font-size: 2rem;
+  color: var(--branco);
+  margin-left: rem;
+  gap: 2rem;
+  
+
+}
+  
+
+
+.footer .infos .img-foot{
+  width: 15rem;
+  height: 8rem;
+}
+.footer .infos .infoSocial i{
+  font-size: 3rem;
+  color: var(--branco);
+  gap: 2rem;
+
+}
+
+.footer .info{
+
+  gap: 2rem;
+  margin: 0.6rem;
+}
+
+.footer .info .redes{
+  display: flex;
+  gap: 2.5rem;
+}
+
+.footer .infos .footService{
+  color: var(--branco);
+  margin-left: 20rem;
+  width: 20rem;
+  margin-top: 1rem;
+  
+}
+
+.footer .infos .footService p{
+  width: 20rem;
+}
+
+.footer .infos .footService p a{
+  
+  text-decoration: none;
+  color: inherit;
+}
+
 
 #dadosUser{
   margin: 1rem;
@@ -95,4 +313,17 @@ select, input[type="text"], input[type="email"], input[type="tel"], input[type="
   border-color: black !important;
   border-radius: 20px !important;
   
+}
+
+
+
+
+@media(max-width: 450px) {
+
+  
+}
+
+
+@media(min-width:780px) and (max-width:1024px){
+
 }
